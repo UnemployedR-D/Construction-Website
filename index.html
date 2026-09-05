@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#17191b" />
+    <meta name="description" content="Theia by Building Blocks: human-approved crew decisions for specialty contractors." />
+    <title>Theia · Building Blocks</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero-stage">
+          <video class="hero-video" id="hero-video" autoplay muted loop playsinline preload="auto" poster="public/assets/construction-hero.png" aria-hidden="true">
+            <source src="public/assets/building-blocks-loop-hq-2.mp4" type="video/mp4" />
+          </video>
+          <div class="hero-wash" aria-hidden="true"></div>
+
+          <header class="site-header">
+            <a class="wordmark" href="#top" aria-label="Building Blocks home">Building Blocks</a>
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+              <span class="sr-only">Toggle navigation</span><span></span><span></span>
+            </button>
+            <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+              <a href="#platform">How it works</a>
+              <a href="#trades">For trades</a>
+              <a href="#gcs">For GCs</a>
+              <a href="#compare">Compare</a>
+              <a class="nav-cta" href="#demo">Product demo <span aria-hidden="true">↗</span></a>
+            </nav>
+          </header>
+
+          <div class="hero-content">
+            <p class="eyebrow">Theia / Physical operations orchestration</p>
+            <h1 id="hero-title">Turn blocked work into the next executable move.</h1>
+            <p class="hero-copy">Designed for construction trades. Theia connects work, constraints, materials, equipment, and crews to help answer: what can we actually build next, and who should do it?</p>
+            <div class="hero-actions">
+              <a class="button button-dark" href="#demo">See Theia in action <span aria-hidden="true">↗</span></a>
+              <a class="button button-glass" href="#model">Explore the operating model <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+
+          <aside class="development-metric" aria-label="Illustrative Theia recommendation">
+<p class="eyebrow">Theia / Illustrative scenario</p><h3>Thursday’s next move</h3>
+<div class="work-row"><strong>Zone B · Overhead rough-in</strong><span class="status blocked">Blocked</span><small>Mechanical predecessor incomplete · Owner: superintendent</small></div>
+<div class="work-row"><strong>Zone C · Cable tray</strong><span class="status">Ready</span><small>Drawings released · Material staged · Lift reserved</small></div>
+<div class="work-row"><strong>Crew 04 · Electrical</strong><small>4 installers · Tray installation capability<br>Assigned to Zone B · Available Thursday, 07:00</small></div>
+<p><strong>Recommended:</strong> move Crew 04 to Zone C. Confirm access with the foreman before dispatch.</p>
+<a class="button button-glass" href="#demo">Review the recommendation ↗</a></aside>
+
+          
+          
+          
+
+          <div class="video-controls">
+            <button class="video-toggle glass-control" id="video-toggle" type="button" aria-label="Pause background video">
+              <span class="play-icon" aria-hidden="true"></span><span id="video-toggle-label">Pause video</span>
+            </button>
+            <a class="scroll-cue glass-control" href="#platform">Scroll to zoom in <span aria-hidden="true">↓</span></a>
+          </div>
+
+          <div class="chapter-bar" aria-label="Site story chapters">
+            <a class="chapter is-active" href="#platform"><b>01</b><span>Context</span></a>
+            <a class="chapter" href="#demo"><b>02</b><span>Decisions</span></a>
+            <a class="chapter" href="#projects"><b>03</b><span>Scenarios</span></a>
+            <a class="chapter" href="#compare"><b>04</b><span>Compare</span></a>
+            <a class="chapter" href="#model"><b>05</b><span>Operating model</span></a>
+          </div>
+        </div>
+      </section>
+
+
+<section class="platform-section" id="platform"><p class="eyebrow">Theia / Product direction</p><h2>The schedule says what should happen.<br>The field decides what can happen next.</h2><p class="section-lead">Theia is being designed as a decision layer for specialty contractors. It connects plans to current conditions, surfaces executable options, and keeps the responsible leader in control.</p>
+<div class="feature-grid"><article><h3>Observe the change</h3><p>Connect work packages to areas, constraints, materials, equipment, and field evidence. Missing information stays “needs confirmation.”</p></article><article><h3>Recommend the next move</h3><p>Match ready work to eligible crews. Explain qualifications, availability, equipment conflicts, assumptions, and affected commitments.</p></article><article><h3>Learn from the outcome</h3><p>A leader approves or modifies the decision. Communicate the assignment and compare actual execution with the expected result.</p></article></div></section>
+<section class="platform-section tinted" id="trades"><p class="eyebrow">Theia for trades / Initial focus</p><h2>Built around the crew decision.</h2><p class="section-lead">Starting with electrical contractors managing multiple projects, crews, areas, and dependencies. Designed for general foremen, superintendents, operations managers, and project managers who make the daily plan executable.</p><p>Readiness brings together drawings, materials, access, inspections, and predecessors. Crew matching considers capability, certifications, shift, location, crew size, and equipment—not just availability.</p></section>
+<section class="platform-section" id="demo"><p class="eyebrow">Interactive concept / Example data</p><h2>The plan changed.<br>Review the next move.</h2><p class="section-lead">An illustrative Thursday shift: Zone B’s mechanical predecessor is incomplete. Theia proposes moving Crew 04 to cable tray installation in Zone C.</p>
+<div class="demo-board"><article><h3>Readiness by area</h3>
+<div class="work-row"><strong>Zone B · Rough-in</strong><span class="status blocked">Blocked</span><small>Predecessor incomplete · Superintendent update, 06:30</small></div>
+<div class="work-row"><strong>Zone C · Cable tray</strong><span class="status">Ready</span><small>Drawings, staging, and lift confirmed · Foreman, 06:45</small></div>
+<div class="work-row"><strong>Zone D · Feeder pull</strong><span class="status blocked">At risk</span><small>Inspection pending · Owner: inspection coordinator</small></div>
+<div class="work-row"><strong>Zone E · Terminations</strong><span class="status unknown">Needs confirmation</span><small>Access update missing · Owner: area foreman</small></div></article>
+<article><h3>Recommended assignment</h3><p>Move Crew 04 to Zone C at 07:00. Four electrical installers are eligible for tray installation; the lift is reserved.</p><p><strong>Tradeoff:</strong> Zone B moves later. Confirm its downstream handoff before approval.</p><p><strong>Assumption:</strong> access remains available at dispatch.</p>
+<form id="decision-form"><label for="decision">Your decision</label><select id="decision"><option>Approve</option><option>Modify</option><option>Escalate</option></select><label for="decision-note">Instruction or reason</label><textarea id="decision-note" rows="2" placeholder="Revised assignment or escalation owner"></textarea><button class="button button-dark" type="submit">Record demo decision ↗</button></form><p id="decision-result" role="status">Demo only. No crew assignment will be sent.</p></article></div></section>
+<section class="platform-section tinted" id="projects"><p class="eyebrow">Field scenarios / Illustrative examples</p><h2>Different constraint.<br>Same decision loop.</h2>
+<details><summary>The planned zone is not ready</summary><p>Mechanical work blocks electrical rough-in. Check alternatives, drawings, staging, access, inspection, and lift availability before seeking approval for a crew move.</p></details>
+<details><summary>Material arrives before the plan catches up</summary><p>Cable tray arrives early. Reassess nearby work packages and crew capability, then compare pulling work forward with holding the existing plan.</p></details>
+<details><summary>The qualified crew is unavailable</summary><p>A medium-voltage foreman is absent and a lift is committed elsewhere. Exclude ineligible crews and expose qualifications, equipment conflicts, and mobilization assumptions.</p></details>
+<details><summary>An inspection changes tomorrow’s plan</summary><p>Link failed inspection and rework to affected packages. Separate blocked work from executable alternatives and observe the actual recovery result.</p></details></section>
+<section class="platform-section" id="model"><p class="eyebrow">The operating model</p><h2>Your systems hold the plan.<br>Theia connects the decision.</h2><p class="section-lead">A construction operations graph connects work packages, areas, constraints, readiness, resources, capabilities, handoffs, decisions, and outcomes. Theia is intended to complement the systems teams already use.</p><ol class="operation-loop"><li>Plan + field evidence</li><li>Readiness + resources</li><li>Options + tradeoffs</li><li>Human approval</li><li>Assignment + outcome</li></ol><h3>Integration targets</h3><p>P6 · Microsoft Project · Procore · Autodesk Construction Cloud · ERP · Timekeeping · Material systems · Workforce records</p><p>These are target integrations, not a claim of live connections. Cameras and other visual evidence are optional future inputs.</p></section>
+<section class="platform-section" id="compare"><p class="eyebrow">Competitive positioning / ALICE + Theia</p><h2>Different operating layer.<br>Better decisions in the field.</h2><p class="section-lead">ALICE and Theia overlap on planning, constraints, resources, production rates, resequencing, and recovery scenarios. The distinction is what happens around the schedule when field conditions change.</p>
+<div class="comparison-grid"><article class="compare-card"><p class="compare-label">ALICE</p><h3>Optimizes modeled scenarios</h3><p>Publicly described capabilities include generating and comparing schedule scenarios using activities, dependencies, constraints, resources, production rates, materials, and equipment.</p><p class="compare-core"><strong>Core object</strong><br>Schedule activity + modeled resources + scheduling constraints</p></article><article class="compare-card compare-card-featured"><p class="compare-label">THEIA</p><h3>Operates the next executable move</h3><p>Theia is designed to maintain live work-readiness and help trade leaders decide which eligible crew should perform which executable work next.</p><p class="compare-core"><strong>Core object</strong><br>Executable work package + live readiness + actual resource capability</p></article></div>
+<div class="comparison-table" role="table" aria-label="ALICE and Theia capability comparison"><div class="comparison-row comparison-header" role="row"><strong role="columnheader">Capability</strong><strong role="columnheader">ALICE</strong><strong role="columnheader">Theia</strong></div><div class="comparison-row" role="row"><span role="cell">Crew resources</span><span role="cell">Models crew quantities, calendars, limits, and costs.</span><span role="cell">Matches named trade crews and foremen by composition, capability, availability, and location.</span></div><div class="comparison-row" role="row"><span role="cell">Materials + equipment</span><span role="cell">Models resources, quantities, costs, and need-by dates.</span><span role="cell">Checks whether material is received, staged, accessible, and ready—and whether the required lift or tool is available.</span></div><div class="comparison-row" role="row"><span role="cell">Changing constraints</span><span role="cell">Optimizes around conditions represented in the model.</span><span role="cell">Surfaces evidence and uncertainty from RFIs, drawings, inspections, access, handoffs, and field updates.</span></div><div class="comparison-row" role="row"><span role="cell">Next action</span><span role="cell">Compares schedule and resource scenarios.</span><span role="cell">Proposes feasible crew-to-work options with tradeoffs for a human to approve or modify.</span></div><div class="comparison-row" role="row"><span role="cell">Learning loop</span><span role="cell">Re-evaluates schedules using actualized inputs.</span><span role="cell">Records recommendation → approval → execution → outcome to compare expected and actual results.</span></div></div>
+<div class="comparison-callout"><strong>The precise difference:</strong> it is not simply which constraints each product can represent. It is who discovers, validates, and maintains those constraints as field conditions change. ALICE optimizes the schedule; Theia is designed to help operate the trade.</div></section>
+<section class="platform-section tinted" id="gcs"><p class="eyebrow">Theia for GCs / Future direction</p><h2>Coordinate the handoff.<br>Respect the trade’s authority.</h2><p class="section-lead">A future GC view would surface cross-trade readiness, constraints, milestone risks, and shared recovery options. Subcontractors retain control of their crews. Worker details, internal labor costs, and proprietary production data are not shared by default.</p></section>
+<footer class="platform-section" id="about"><p class="eyebrow">Building Blocks / Theia</p><h2>People first.<br>Ready for what comes next.</h2><p class="section-lead">Theia starts with human crews and existing tools. Robots and AI agents are a longer-term extension of the resource model. The initial direction: help specialty contractors turn changing field conditions into human-approved, executable decisions.</p><a class="button button-glass" href="#demo">Explore the product concept ↗</a></footer>
+</main></body></html>
