@@ -45,7 +45,7 @@ document.querySelector('#decision-form').addEventListener('submit', (event) => {
   event.preventDefault();
   const decision = document.querySelector('#decision').value;
   const note = document.querySelector('#decision-note').value.trim();
-  document.querySelector('#decision-result').textContent = `${decision} recorded for this demo${note ? ': ' + note : '.'} No assignment was sent. Refreshing clears this decision.`;
+  document.querySelector('#decision-result').textContent = `${decision} recorded for this demo${note ? ': ' + note : '.'} No real project update was sent. Refreshing clears this decision.`;
 });
 
 menuButton?.addEventListener('click', () => {

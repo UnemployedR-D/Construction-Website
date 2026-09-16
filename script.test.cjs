@@ -24,7 +24,7 @@ for (const choice of ['Approve', 'Modify', 'Escalate']) {
   element('#decision-form').handlers.submit({ preventDefault() { prevented = true; } });
   assert(prevented);
   assert(element('#decision-result').textContent.startsWith(choice + ' recorded'));
-  assert(element('#decision-result').textContent.includes('No assignment was sent.'));
+  assert(element('#decision-result').textContent.includes('No real project update was sent.'));
   assert(element('#decision-result').textContent.includes('<b>Confirm access</b>'));
 }
 assert.equal(element('#video-toggle-label').textContent, 'Play video');
