@@ -3,89 +3,110 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#17191b" />
-    <meta name="description" content="Theia by Building Blocks: a live coordination layer for construction field teams." />
+    <meta name="theme-color" content="#f6f6ff" />
+    <meta name="description" content="Theia by Building Blocks: a construction workspace for activities, field notes, captured conversations, project questions, and reports." />
     <title>Theia · Building Blocks</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="hero.css" />
+    <link rel="stylesheet" href="story.css" />
+    <script src="public/vendor/gsap/gsap.min.js" defer></script>
+    <script src="public/vendor/gsap/ScrollTrigger.min.js" defer></script>
     <script src="script.js" defer></script>
   </head>
   <body>
     <main>
-      <section class="hero" id="top" aria-labelledby="hero-title">
-        <div class="hero-stage">
-          <video class="hero-video" id="hero-video" autoplay muted loop playsinline preload="auto" poster="public/assets/construction-hero.png" aria-hidden="true">
-            <source src="public/assets/building-blocks-loop-4k-web.mp4" type="video/mp4" />
-          </video>
-          <div class="hero-wash" aria-hidden="true"></div>
-
-          <header class="site-header">
-            <a class="wordmark" href="#top" aria-label="Building Blocks home">Building Blocks</a>
-            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
-              <span class="sr-only">Toggle navigation</span><span></span><span></span>
-            </button>
-            <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
-              <a href="#product">Product</a>
-              <a href="#workflow">How it works</a>
-              <a href="#teams">For field teams</a>
-              <a href="#fit">Fits your process</a>
-              <a class="nav-cta" href="#pilot">Join the pilot <span aria-hidden="true">↗</span></a>
-            </nav>
-          </header>
-
-          <div class="hero-content">
-            <p class="eyebrow">Theia / Live coordination for the field</p>
-            <h1 id="hero-title">Keep the field synchronized when the plan changes.</h1>
-            <p class="hero-copy">Theia keeps near-term plans, progress, constraints, and changes connected across the GC and subcontractors—so when field conditions change, the affected people and work are easier to identify and the team can coordinate the response.</p>
-            <div class="hero-actions">
-              <a class="button button-dark" href="#pilot">Join the pilot <span aria-hidden="true">↗</span></a>
-              <a class="button button-glass" href="#scenario">See the scenario <span aria-hidden="true">↗</span></a>
-            </div>
+      <section class="theia-hero" id="top" aria-labelledby="hero-title">
+        <header class="theia-header">
+          <a class="theia-brand" href="#top" aria-label="Theia home"><svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><path d="M20 3v34M3 20h34M8 8l24 24M8 32L32 8" stroke="currentColor" stroke-width="1.2"/><path d="M12 16l8-5 8 5v9l-8 5-8-5z" stroke="currentColor" stroke-width="1.2"/></svg>THEIA</a>
+          <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="sr-only">Toggle navigation</span><span></span><span></span></button>
+          <nav class="theia-nav" id="site-nav" aria-label="Primary navigation">
+            <a href="#product">Product</a>
+            <a href="#how-it-works">How it works</a>
+            <a href="#company">Company</a>
+            <a href="#resources">Resources</a>
+          </nav>
+          <a class="theia-pill header-pilot" href="#pilot">Join the pilot <span aria-hidden="true">↗</span></a>
+        </header>
+        <div class="theia-hero-content">
+          <p class="theia-eyebrow">Built for the field</p>
+          <h1 id="hero-title">Construction moves.<br>Stay in sync.</h1>
+          <p class="theia-description">Meet Theia. The operating system that keeps field updates,<br class="desktop-break"> teams, and next steps connected.</p>
+          <div class="theia-actions">
+            <a class="theia-pill" href="#pilot">Join the pilot <span aria-hidden="true">↗</span></a>
+            <a class="theia-pill theia-outline" id="watch-demo" href="#demo"><span aria-hidden="true">▶</span> Watch the demo</a>
           </div>
-
-          <aside class="development-metric" aria-label="Illustrative Theia coordination update">
-            <p class="eyebrow">Theia / Illustrative change</p>
-            <h3>Monday afternoon</h3>
-            <div class="work-row"><strong>Electrical · Area A</strong><span class="status blocked">Changed</span><small>Rough-in will not finish today · Reported by electrical foreman</small></div>
-            <div class="work-row"><strong>Drywall · Area A</strong><span class="status blocked">Affected</span><small>14 workers planned for Tuesday · Downstream work may move</small></div>
-            <div class="work-row"><strong>Superintendent</strong><span class="status">Review</span><small>Compare Area C availability, access, materials, and handoffs</small></div>
-            <p><strong>Next:</strong> surface who and what is affected. The superintendent makes the call.</p>
-            <a class="button button-glass" href="#scenario">Follow the change ↗</a>
-          </aside>
-
-          
-          
-          
-
-          <div class="video-controls">
-            <button class="video-toggle glass-control" id="video-toggle" type="button" aria-label="Pause background video">
-              <span class="play-icon" aria-hidden="true"></span><span id="video-toggle-label">Pause video</span>
-            </button>
-            <a class="scroll-cue glass-control" href="#product">Scroll to zoom in <span aria-hidden="true">↓</span></a>
-          </div>
-
-          <div class="chapter-bar" aria-label="Site story chapters">
-            <a class="chapter is-active" href="#product"><b>01</b><span>Problem</span></a>
-            <a class="chapter" href="#scenario"><b>02</b><span>Scenario</span></a>
-            <a class="chapter" href="#workflow"><b>03</b><span>Workflow</span></a>
-            <a class="chapter" href="#fit"><b>04</b><span>Fits the process</span></a>
-            <a class="chapter" href="#pilot"><b>05</b><span>Pilot</span></a>
-          </div>
+          <p class="theia-byline">Theia by Building Blocks</p>
         </div>
+        <a class="theia-scroll" href="#product" aria-label="Explore Theia">↓</a>
       </section>
+      <div class="product-story">
+        <section class="story-section walkthrough-section" id="demo" aria-labelledby="walkthrough-title">
+          <div class="section-heading" data-reveal><div><p class="section-tag">Meet Theia / 1 min 38 sec</p><h2 id="walkthrough-title">See the bigger picture.</h2><p class="story-lead">A closer look at Theia and the field knowledge<br class="desktop-break"> that brings a project together.</p></div></div>
+          <div class="walkthrough-player">
+            <video id="walkthrough-video" controls playsinline preload="none" poster="public/assets/theia-walkthrough-poster.jpg" aria-label="Theia product introduction">
+              <source src="public/assets/theia-walkthrough.mp4" type="video/mp4">
+              Your browser does not support embedded video. <a href="public/assets/theia-walkthrough.mp4">Watch the Theia introduction</a>.
+            </video>
+          </div>
+        </section>
+        <section class="story-section story-intro" id="product" aria-labelledby="product-title">
+          <p class="section-tag" data-reveal>The construction workspace</p>
+          <div class="intro-grid" data-reveal><h2 id="product-title">Field knowledge.<br>Project context.<br>One place.</h2><div><p class="story-lead">Theia is an operating system for construction teams. It brings activities, field observations, and project knowledge into a shared workspace.</p><p>Capture what happened on site. Review the updates that matter. Ask questions about your project and turn its records into reports. Theia helps your team move from scattered information to a clearer picture of the work.</p><a class="text-link" href="#capture">Explore the workspace <span aria-hidden="true">↘</span></a></div></div>
+          <div class="workspace-strip" data-reveal><span>Activities</span><span>Field notes</span><span>Field capture</span><span>Ask Theia</span><span>Reports</span></div>
+        </section>
+
+        <section class="story-section" id="capture" aria-labelledby="capture-title">
+          <div class="section-heading" data-reveal><div><p class="section-tag">01 / Capture</p><h2 id="capture-title">Keep the details<br>from the field.</h2><p class="story-lead">Give observations a place to live, with the activity<br class="desktop-break"> and context they belong to.</p></div><a class="small-pill" href="#how-it-works">How it works <span aria-hidden="true">↗</span></a></div>
+          <div class="feature-layout">
+            <div class="product-canvas note-canvas" data-reveal aria-label="Illustrative field note preview">
+              <div class="floating-note note-back"><span class="pastel-icon">▤</span><span>Project context</span></div>
+              <div class="floating-note note-middle"><span class="pastel-icon lilac">≋</span><span>Field observation</span></div>
+              <div class="capture-panels"><div class="note-card carousel-panel" id="capture-panel-0" data-review-panel="0"><div class="preview-topline"><span class="pastel-icon blue">♩</span><span>Field note</span><span class="sample-badge">Example</span></div><div class="waveform" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><p>“Level two, east wing. Electrical rough-in is complete. Ready for review.”</p><div class="note-meta"><span>Electrical rough-in</span><span>Level 02</span></div></div>
+              <div class="note-card carousel-panel" id="capture-panel-1" data-review-panel="1" hidden><div class="preview-topline"><span class="pastel-icon lilac">≋</span><span>Captured conversation</span><span class="sample-badge">Example</span></div><p>“Crew is wrapping the east wing. We’ll be ready for inspection after lunch.”</p><div class="note-meta"><span>Radio · Channel 2</span><span>Transcript</span></div></div><div class="note-card carousel-panel" id="capture-panel-2" data-review-panel="2" hidden><div class="preview-topline"><span class="pastel-icon">↗</span><span>Activity evidence</span><span class="sample-badge">Example</span></div><p>Electrical rough-in<br><small>Level 02 · East wing</small></p><div class="review-note">Latest field note linked to this activity.</div></div></div><div class="review-carousel-controls"><span class="review-slide-count">01 / 03</span><button type="button" class="review-pause">Pause slides</button></div><span class="canvas-caption">Illustrative product preview</span>
+            </div>
+            <div class="feature-copy" data-reveal><button type="button" class="feature-point is-emphasized" data-carousel-select="0" aria-pressed="true" aria-controls="capture-panel-0"><span class="line-symbol" aria-hidden="true">◎</span><span><span class="feature-title">Field notes, with context</span><span class="feature-description">Record observations and keep them connected to project activities, so the details are easier to find later.</span></span></button><button type="button" class="feature-point" data-carousel-select="1" aria-pressed="false" aria-controls="capture-panel-1"><span class="line-symbol" aria-hidden="true">≋</span><span><span class="feature-title">Capture from the field</span><span class="feature-description">Bring captured radio conversations and their transcripts into the workspace for review.</span></span></button><button type="button" class="feature-point" data-carousel-select="2" aria-pressed="false" aria-controls="capture-panel-2"><span class="line-symbol" aria-hidden="true">↳</span><span><span class="feature-title">A record you can return to</span><span class="feature-description">Follow the source behind an update instead of relying on a summary alone.</span></span></button></div>
+          </div>
+        </section>
+
+        <section class="story-section" id="review" aria-labelledby="review-title">
+          <div class="section-heading" data-reveal><div><p class="section-tag">02 / Understand</p><h2 id="review-title">See the work.<br>Review what changed.</h2><p class="story-lead">Keep activities and their latest evidence together.</p></div></div>
+          <div class="feature-layout reverse-layout"><div class="feature-copy" data-reveal><button type="button" class="feature-point is-emphasized" data-review-select="0" aria-pressed="true" aria-controls="review-panel-0"><span class="line-symbol" aria-hidden="true">▦</span><span><span class="feature-title">A shared project overview</span><span class="feature-description">See activities, progress, and the items that need attention in one workspace.</span></span></button><button type="button" class="feature-point" data-review-select="1" aria-pressed="false" aria-controls="review-panel-1"><span class="line-symbol" aria-hidden="true">✓</span><span><span class="feature-title">Suggested updates, reviewed by you</span><span class="feature-description">Check proposed changes against the field evidence before accepting them into the project record.</span></span></button><button type="button" class="feature-point" data-review-select="2" aria-pressed="false" aria-controls="review-panel-2"><span class="line-symbol" aria-hidden="true">◷</span><span><span class="feature-title">The history behind the status</span><span class="feature-description">Return to activity details and earlier observations to understand how the work has developed.</span></span></button></div>
+          <div class="product-canvas overview-canvas" data-reveal><div class="review-slides"><div class="overview-preview review-slide" id="review-panel-0" data-review-panel="0" role="group" aria-label="1 of 3: Project overview"><div class="preview-topline"><strong>Project overview</strong><span class="sample-badge">Example</span></div><p class="preview-subtitle">Riverside / Level 02</p><div class="preview-stats"><div><small>Activities</small><strong>12</strong></div><div><small>Needs attention</small><strong>4</strong></div><div><small>On track</small><strong>8</strong></div></div><div class="activity-preview"><span>Electrical rough-in<small>East wing · Level 02</small></span><span class="preview-status">Review update</span></div><div class="activity-preview"><span>Concrete placement<small>West wing · Level 01</small></span><span class="preview-status green">On track</span></div><div class="review-note"><span aria-hidden="true">↳</span> Field note available for review</div></div><div class="overview-preview review-slide" id="review-panel-1" data-review-panel="1" role="group" aria-label="2 of 3: Suggested update" hidden><div class="preview-topline"><strong>Suggested update</strong><span class="sample-badge">Example</span></div><p class="preview-subtitle">Electrical rough-in / East wing</p><div class="review-evidence"><span class="source-chip">Field note · Level 02</span><p>“Electrical rough-in is complete. Ready for review.”</p></div><div class="review-change"><small>Proposed status</small><strong>In progress <span aria-hidden="true">→</span> Complete</strong></div><div class="review-note">Check the original note before accepting the change.</div><div class="preview-decision"><span>Accept update ✓</span><span>Keep current status</span></div></div>
+<div class="overview-preview review-slide" id="review-panel-2" data-review-panel="2" role="group" aria-label="3 of 3: Activity history" hidden><div class="preview-topline"><strong>Activity history</strong><span class="sample-badge">Example</span></div><p class="preview-subtitle">Electrical rough-in / East wing</p><ol class="preview-history"><li><small>Latest observation</small><strong>Rough-in reported complete</strong><p>Field note received · Awaiting review</p></li><li><small>Earlier observation</small><strong>Installation in progress</strong><p>Crew working through the east wing.</p></li><li><small>Activity created</small><strong>Electrical rough-in</strong><p>Level 02 · East wing</p></li></ol><div class="review-note">Project status stays connected to its evidence.</div></div></div>
+<div class="review-carousel-controls"><span class="review-slide-count" aria-live="off">01 / 03</span><button type="button" class="review-pause" aria-pressed="false">Pause slides</button></div><span class="canvas-caption">Illustrative product preview · sample data</span></div></div>
+        </section>
+
+        <section class="story-section" id="intelligence" aria-labelledby="intelligence-title">
+          <div class="section-heading" data-reveal><div><p class="section-tag">03 / Ask &amp; share</p><h2 id="intelligence-title">Your project knowledge.<br>Ready for a question.</h2><p class="story-lead">Explore project records with Ask Theia.<br class="desktop-break"> Bring the useful details into a report.</p></div></div>
+          <div class="feature-layout"><div class="product-canvas ask-canvas" data-reveal><div class="ask-panels"><div class="ask-preview carousel-panel" id="intelligence-panel-0" data-review-panel="0"><div class="preview-topline"><span class="pastel-icon lilac">✧</span><strong>Ask Theia</strong><span class="sample-badge">Example</span></div><p class="question-bubble">What is the latest on electrical rough-in?</p><div class="answer-preview"><span class="line-symbol" aria-hidden="true">✧</span><p>The latest field note reports that rough-in is complete in the east wing on level two. The update is awaiting review.</p></div><span class="source-chip">↗ Field note · Electrical rough-in</span><div class="report-preview"><span class="pastel-icon">▤</span><div><strong>Project summary</strong><small>Keep a report alongside your project records.</small></div></div></div><div class="ask-preview carousel-panel" id="intelligence-panel-1" data-review-panel="1" hidden><div class="preview-topline"><span class="pastel-icon lilac">↗</span><strong>Project source</strong><span class="sample-badge">Example</span></div><p class="question-bubble">Where does that update come from?</p><div class="answer-preview"><span class="line-symbol">▤</span><p>Electrical rough-in was marked complete in a field note for the east wing.</p></div><span class="source-chip">Field note · Level 02 · East wing</span></div><div class="ask-preview carousel-panel" id="intelligence-panel-2" data-review-panel="2" hidden><div class="preview-topline"><span class="pastel-icon">▤</span><strong>Project report</strong><span class="sample-badge">Example</span></div><p class="preview-subtitle">Electrical rough-in · East wing</p><div class="review-note">Latest update: field note reports rough-in complete. Status is awaiting review.</div><div class="report-preview"><span class="pastel-icon lilac">✓</span><div><strong>Source included</strong><small>Project summary · Updated today</small></div></div></div></div><div class="review-carousel-controls"><span class="review-slide-count" aria-live="off">01 / 03</span><button type="button" class="review-pause" aria-pressed="false">Pause slides</button></div><span class="canvas-caption">Illustrative response · sample project records</span></div>
+          <div class="feature-copy" data-reveal><button type="button" class="feature-point is-emphasized" data-carousel-select="0" aria-pressed="true" aria-controls="intelligence-panel-0"><span class="line-symbol" aria-hidden="true">✧</span><span><span class="feature-title">Ask in your own words</span><span class="feature-description">Use natural language to explore the project information available to Theia.</span></span></button><button type="button" class="feature-point" data-carousel-select="1" aria-pressed="false" aria-controls="intelligence-panel-1"><span class="line-symbol" aria-hidden="true">↗</span><span><span class="feature-title">Follow the sources</span><span class="feature-description">Use linked project records to inspect the evidence behind an answer.</span></span></button><button type="button" class="feature-point" data-carousel-select="2" aria-pressed="false" aria-controls="intelligence-panel-2"><span class="line-symbol" aria-hidden="true">▤</span><span><span class="feature-title">Keep useful answers as reports</span><span class="feature-description">Create and revisit reports in your project workspace, with the information your team needs to discuss.</span></span></button></div></div>
+        </section>
+
+        <section class="workflow-section" id="how-it-works" aria-labelledby="workflow-title"><div class="story-section"><p class="section-tag" data-reveal>How it works</p><h2 id="workflow-title" data-reveal>From a field observation<br>to a useful project record.</h2><ol class="workflow-steps"><li data-reveal><span>01</span><h3>Capture</h3><p>Add a field note or review captured field communication.</p></li><li data-reveal><span>02</span><h3>Connect</h3><p>Bring the observation together with its activity and project context.</p></li><li data-reveal><span>03</span><h3>Review</h3><p>Check the evidence and decide which suggested changes to accept.</p></li><li data-reveal><span>04</span><h3>Use</h3><p>Explore the project overview, ask a question, or create a report.</p></li></ol></div></section>
+
+        <section class="story-section faq-section" id="resources" aria-labelledby="faq-title"><div data-reveal><p class="section-tag">A little more context</p><h2 id="faq-title">Good questions.</h2></div><div class="faq-list" data-reveal><details><summary>Who is Theia for?</summary><p>Theia is being built for construction project teams, including superintendents and the people who capture, review, and use information from the field.</p></details><details><summary>What does the AI do?</summary><p>Theia helps interpret field information and lets you ask questions about project records. Suggested changes need review, and answers depend on the information available. Your team stays responsible for project decisions.</p></details><details><summary>Does Theia replace our scheduling software?</summary><p>The current workspace focuses on activities, field information, review, and project knowledge. It is not presented as a replacement for a master scheduling tool.</p></details><details><summary>Can I see the product in action?</summary><p>Watch the video introduction above to meet Theia. The other product previews on this page are illustrative examples, rather than a live connection to a project.</p><a class="text-link" href="#demo">Watch the video ↗</a></details></div></section>
+
+        <section class="story-section company-section" id="company"><div data-reveal><p class="section-tag">Theia by Building Blocks</p><h2>Built around the people<br>who build.</h2></div><p class="story-lead" data-reveal>Our focus is the information that moves between the field and the project team. Theia gives that knowledge a shared home, so the work is easier to understand and the next conversation starts with context.</p></section>
+        <section class="pilot-section contact-section" id="pilot" aria-labelledby="pilot-title">
+          <div class="contact-inner">
+            <div class="contact-copy" data-reveal>
+              <p class="section-tag">Let’s build together</p>
+              <h2 id="pilot-title">Get started<br>with Theia.</h2>
+              <p>See how Theia can bring your field information and project knowledge together. Start a conversation about your team.</p>
+            </div>
+            <form class="contact-form" id="contact-form" aria-describedby="contact-status" data-reveal>
+              <div class="contact-field"><label for="contact-name">Name <span aria-hidden="true">*</span></label><input id="contact-name" name="name" type="text" autocomplete="name" placeholder="Your name" required maxlength="120"></div>
+              <div class="contact-field"><label for="contact-email">Business email <span aria-hidden="true">*</span></label><input id="contact-email" name="email" type="email" autocomplete="email" placeholder="you@company.com" required maxlength="254"></div>
+              <div class="contact-field"><label for="contact-phone">Phone number <span class="field-optional">(optional)</span></label><input id="contact-phone" name="phone" type="tel" autocomplete="tel" placeholder="+1 (555) 000-0000" maxlength="40"></div>
+              <button class="theia-pill contact-submit" type="submit" disabled aria-describedby="contact-status">Request a demo <span aria-hidden="true">↗</span></button>
+              <p class="contact-status" id="contact-status" role="status">Demo requests will open soon. This form isn’t accepting submissions yet.</p>
+            </form>
+          </div>
+        </section>
+        <footer class="story-footer"><a href="#top" class="footer-brand">THEIA <small>by Building Blocks</small></a><span>A shared home for field knowledge.</span><a href="#top">Back to top ↑</a></footer>
+      </div>
 
 
-<section class="platform-section" id="product"><p class="eyebrow">The problem / Near-term coordination</p><h2>The schedule isn’t the whole story.</h2><p class="section-lead">Construction teams already plan through P6 and master schedules, 3–6 week lookaheads, weekly work planning, daily Plan of the Day meetings, subcontractor huddles, field walks, calls, texts, emails, and daily reports. Theia is not based on the assumption that teams do not plan or communicate.</p><p>Field reality can change between those planning and synchronization points. One trade runs behind. An inspection does not happen. A delivery misses its window. An area is not ready. One change can affect multiple people and near-term plans.</p><div class="process-tags" aria-label="Existing planning and coordination processes"><span>P6 / master schedule</span><span>3–6 week lookahead</span><span>Weekly work plan</span><span>POD meeting</span><span>Subcontractor huddle</span><span>Field walk</span><span>Calls + texts</span><span>Daily report</span></div>
-<div class="feature-grid"><article><h3>Plans + commitments</h3><p>Connect what each trade intends to do, where, and when—with the responsible people and current commitments.</p></article><article><h3>Changes + impacts</h3><p>Surface when a field change affects another trade, area, activity, or upcoming commitment.</p></article><article><h3>One shared picture</h3><p>Keep the revised near-term plan and the people who need to act on it aligned.</p></article></div></section>
-<section class="platform-section tinted" id="fit"><p class="eyebrow">Works with existing planning / Not another schedule</p><h2>Works with how the field already operates.</h2><p class="section-lead">Theia isn’t another place to build the master schedule. Existing schedules, lookaheads, huddles, and field verification establish and validate the plan. Theia is designed to connect the changes that happen around them and keep affected people and near-term plans synchronized.</p>
-<div class="planning-flow" aria-label="How Theia fits with existing planning processes"><div class="planning-sources"><div class="planning-node"><span>01</span><strong>P6 / Master schedule</strong></div><div class="planning-node"><span>02</span><strong>Lookahead / Weekly plan</strong></div><div class="planning-node"><span>03</span><strong>POD / Huddles / Field walks</strong></div><div class="planning-node"><span>04</span><strong>Field execution</strong></div></div><div class="theia-band"><span>THEIA</span><strong>Connect the change → Surface the impact → Coordinate the response</strong><small>Receives signals from the existing operating rhythm; does not create another copy of the schedule.</small></div><div class="planning-node planning-revised"><span>05</span><strong>Revised near-term plan + commitments</strong></div></div><p class="fit-note">The goal is not to make field teams maintain another version of the schedule. It is to keep the shared operational picture current when reality moves.</p></section>
-<section class="platform-section" id="teams"><p class="eyebrow">The product / A live coordination layer for the field</p><h2>Keep the GC and trades synchronized.</h2><p class="section-lead">Theia connects near-term plans, progress, constraints, changes, and commitments across the field team. GC ↔ Sub is the primary relationship; the same shared picture can help connect GC supers and GC-mediated trade relationships.</p>
-<div class="feature-grid relationship-grid"><article><h3>GC ↔ Sub</h3><p>Keep the GC and subcontractors aligned on near-term intentions, areas, commitments, progress, readiness, constraints, changes, and what happens next.</p></article><article><h3>GC Super ↔ GC Super</h3><p>Prevent a change learned by one superintendent or scope from remaining isolated when it affects another superintendent’s work.</p></article><article><h3>Sub ↔ Sub, GC-mediated</h3><p>Recognize when one trade’s change affects another trade while keeping the GC involved where its judgment or authority is needed.</p></article></div></section>
-<section class="platform-section" id="scenario"><p class="eyebrow">Example scenario / Monday morning → Tuesday</p><h2>One change can affect multiple plans.</h2><p class="section-lead">A simple field update can carry consequences across the next shift. Theia’s job is to connect the change, surface the impact, and help the superintendent coordinate the response.</p>
-<div class="demo-board"><article><h3>The plan changes</h3><div class="scenario-step"><span>01</span><div><strong>Monday morning</strong><p>Electrical should finish rough-in in Area A. Drywall has 14 workers planned for Area A Tuesday.</p></div></div><div class="scenario-step"><span>02</span><div><strong>Monday afternoon</strong><p>Electrical reports: “Area A won’t be finished today.” The change starts as a field conversation, text, call, or update.</p></div></div><div class="scenario-step"><span>03</span><div><strong>The impact is connected</strong><p>Drywall’s plan for tomorrow may now be affected. Theia surfaces the area, downstream work, responsible people, and missing information.</p></div></div></article>
-<article><h3>The superintendent decides</h3><p>Theia can connect the change and surface what still needs verification. It does not automatically declare Area C ready. The superintendent remains responsible for the decision.</p><div class="work-row"><strong>Electrical · Area A</strong><span class="status blocked">Changed</span><small>Finish date moved · Commitment needs review</small></div><div class="work-row"><strong>Drywall · Area A</strong><span class="status blocked">Affected</span><small>14 workers planned Tuesday · Downstream work may move</small></div><div class="work-row"><strong>Area C · Drywall</strong><span class="status unknown">Needs verification</span><small>Check access, materials, predecessor completion, inspection, handoff, and other-trade conflicts</small></div><div class="work-row"><strong>Impact owner</strong><span class="status known">Known</span><small>Superintendent reviews the affected plan and revised commitments</small></div><div class="status-key" aria-label="Scenario status meanings"><span class="status known">Known</span><span class="status blocked">Changed</span><span class="status blocked">Affected</span><span class="status unknown">Needs verification</span></div><form id="decision-form"><label for="decision">Illustrative response</label><select id="decision"><option>Keep Electrical in Area A</option><option>Move Drywall to Area C</option><option>Escalate for superintendent review</option></select><label for="decision-note">New commitment or note</label><textarea id="decision-note" rows="2" placeholder="Capture the revised plan"></textarea><button class="button button-dark" type="submit">Record demo decision ↗</button></form><p id="decision-result" role="status">Demo only. No project update will be sent.</p></article></div></section>
-<section class="platform-section" id="workflow"><p class="eyebrow">How Theia works / Plan → reality → response</p><h2>Six steps around the change.</h2><p class="section-lead">Theia is a coordination loop for maintaining shared operational awareness as conditions change—not another place to create a master schedule.</p><ol class="operation-loop"><li>Capture plans, commitments, progress, constraints, and changes</li><li>Understand what trades intend to do and what is happening</li><li>Detect affected people, areas, activities, and commitments</li><li>Surface what changed, who is affected, and what matters</li><li>Respond with the superintendent’s decision</li><li>Synchronize the revised plan and new commitments</li></ol><div class="workflow-note"><strong>Initial product</strong><span>Synchronize + detect impact</span><strong>Later capability</strong><span>Assist recovery when reliable information is available</span></div></section>
-<section class="platform-section tinted" id="control"><p class="eyebrow">Human-in-the-loop / Field judgment stays central</p><h2>Your field team makes the call.</h2><p class="section-lead">Theia supports field judgment; it does not replace it. Experienced superintendents hold context software may not have: actual conditions, safety concerns, means and methods, relationships, contractual considerations, and project-specific realities.</p><div class="control-callout"><strong>Theia’s role</strong><span>Reduce the work required to gather, connect, relay, and maintain operational information—so the superintendent can make an informed decision and keep the team aligned.</span></div></section>
-<section class="platform-section" id="evolution"><p class="eyebrow">Product evolution / Intended direction</p><h2>From knowing what changed to coordinating what happens next.</h2><div class="stage-grid"><article><span>01</span><small class="stage-tag">Initial product</small><h3>Synchronize</h3><p>Maintain the shared near-term operational picture.</p></article><article><span>02</span><small class="stage-tag">Initial product</small><h3>Detect impact</h3><p>When something changes, determine what other plans, people, areas, or commitments may be affected.</p></article><article><span>03</span><small class="stage-tag">Later capability</small><h3>Assist recovery</h3><p>When reliable information exists, surface feasible alternatives and tradeoffs.</p></article><article><span>04</span><small class="stage-tag">Later capability</small><h3>Coordinate the decision</h3><p>Propagate the approved response, capture revised commitments, and monitor the new plan.</p></article></div></section>
-<section class="platform-section tinted" id="boundaries"><p class="eyebrow">Product philosophy / Clear boundaries</p><h2>Assist the field team.<br>Don’t replace its judgment.</h2><p class="section-lead">Theia is not an AI superintendent, a replacement for the superintendent, another CPM or master scheduling tool, or a promise that every field condition is already known. It is not intended to create another version of the schedule that field teams have to manually maintain.</p><div class="boundary-list"><span>It does not replace P6 or CPM scheduling.</span><span>It does not eliminate POD meetings, huddles, field walks, or superintendent judgment.</span><span>It does not assume every field condition is digitally known.</span><span>It does not claim to predict every disruption or prove savings before the product exists.</span></div></section>
-<footer class="platform-section" id="pilot"><p class="eyebrow">Building Blocks / Theia pilot</p><h2>Help shape Theia on a real project.</h2><p class="section-lead">We’re working with construction field teams to understand what happens when field reality changes between planning cycles—and where recognizing the impact, getting the right people involved, and coordinating the revised plan still requires unnecessary work.</p><a class="button button-dark" href="#pilot">Join the pilot <span aria-hidden="true">↗</span></a></footer>
-</main></body></html>
+
+    </main>
+  </body>
+</html>
